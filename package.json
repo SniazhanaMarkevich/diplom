@@ -4,9 +4,9 @@
   "description": "automation test for module test, api test, e2e test",
   "main": "index.js",
   "scripts": {
-    "unit:test": "jest --coverage --config='./unit/config/jest.config.js'",
+    "unit:test": "jest --config='./unit/config/jest.config.js'",
     "unit:report": "start ./unit/jest-html-report/report.html",
-    "api:test": "jest --coverage --config='./api/config/jest.config.js'",
+    "api:test": "jest --config='./api/config/jest.config.js'",
     "api:report": "start ./api/jest-html-report/report.html",
     "ui:test": "playwright test --config=./ui/config/playwright.config.ts",
     "ui:report": "playwright show-report ui/assets/reporter",
