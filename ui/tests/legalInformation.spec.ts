@@ -1,7 +1,8 @@
 import { type Page, expect, test } from '@playwright/test';
 import { HomePage } from '../src/pages/homePage';
 import { LegalInformationPage } from '../src/pages/legalInformationPage';
-import { baseLegalInformationUrl, elementText } from '../src/support/constants';
+import { baseLegalInformationUrl } from '../src/support/baseUrl';
+import { elementText } from '../src/support/textElement';
 
 test.describe.configure({ mode: 'serial' });
 

@@ -1,10 +1,16 @@
 import superagent, { Response } from 'superagent';
+import { baseUrl, baseUrlForPUT } from '../src/constants/baseUrl';
+import { orderId, orderIdInvalid } from '../src/constants/orderID';
 import { 
-  MESSAGE_ERROR, MESSAGE_MISSING_ERROR, 
-  baseUrl, baseUrlForPUT, MESSAGE_DELETE_ERROR,
-  newValueForOrder, updatedValueForPet, updatedValueForPetWrong,
-  orderId, orderIdInvalid 
-} from '../src/constants/constants';
+  newValueForOrder, 
+  updatedValueForPet, 
+  updatedValueForPetWrong 
+} from '../src/constants/objectValue';
+import { 
+  MESSAGE_DELETE_ERROR, 
+  MESSAGE_ERROR, 
+  MESSAGE_MISSING_ERROR 
+} from '../src/constants/messageError';
 
 let response: Response;
 

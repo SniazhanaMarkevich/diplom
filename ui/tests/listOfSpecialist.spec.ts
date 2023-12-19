@@ -1,7 +1,7 @@
 import { type Page, expect, test } from '@playwright/test';
 import { HomePage } from '../src/pages/homePage';
-import { baseDoctorInformationUrl, baseDoctorsUrl } from '../src/support/constants';
 import { ListOfSpecialistPage } from '../src/pages/listOfSpecialistPage';
+import { baseDoctorInformationUrl, baseDoctorsUrl } from '../src/support/baseUrl';
 
 test.describe.configure({ mode: 'serial' });
 

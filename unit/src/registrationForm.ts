@@ -1,12 +1,12 @@
 import { 
-  EMAIL_LENGTH_TEXT_MESSAGE_ERROR,
-  EMAIL_SPECIAL_CHARACTER_TEXT_MESSAGE_ERROR,
+  EMAIL_LENGTH_TEXT_MESSAGE_ERROR, 
+  EMAIL_SPECIAL_CHARACTER_TEXT_MESSAGE_ERROR, 
   LOGIN_LENGTH_TEXT_MESSAGE_ERROR, 
   PHONE_NUMBER_LENGTH_TEXT_MESSAGE_ERROR, 
   SPECIAL_CHARACTER_TEXT_MESSAGE_ERROR, 
-  STARTS_WITH_A_NUMBER_TEXT_MESSAGE_ERROR, 
-  firstNumberInLogin 
-} from "./support/constants";
+  STARTS_WITH_A_NUMBER_TEXT_MESSAGE_ERROR 
+} from './support/messageError';
+import { firstNumberInLogin } from './support/constants'
 
 export class RegistrationForm {
   constructor () {}

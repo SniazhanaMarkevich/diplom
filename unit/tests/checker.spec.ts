@@ -1,5 +1,7 @@
 import { RegistrationForm } from "../src/registrationForm";
-import { email, emailError, login, loginError, phone, phoneError } from "../src/support/constants";
+import { email, emailError } from "../src/support/constantsForEmail";
+import { login, loginError } from "../src/support/constantsForLogin";
+import { phone, phoneError } from "../src/support/constantsForPhone";
 
 let registration: RegistrationForm;
 

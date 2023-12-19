@@ -1,6 +1,6 @@
 import { type Page } from '@playwright/test';
 import { BasePage } from './basePage';
-import { baseDoctorsUrl } from '../support/constants';
+import { baseDoctorsUrl } from '../support/baseUrl';
 
 export class ListOfSpecialistPage extends BasePage {
   constructor (page: Page) {
@@ -18,11 +18,11 @@ export class ListOfSpecialistPage extends BasePage {
   }
 
   public getSpecializationContain () {
-   return this.page.locator('div.doctors__list > div:nth-child(19) > div > div.doctors-item__main > div.doctors__item-desc').getByText('Врач');
+   return this.page.locator('div:nth-child(19) div.doctors__item-desc').getByText('Врач');
   }
 
   public getMoreDetailsLink () {
-    return this.page.locator('div.doctors__list > div:nth-child(20) div.doctors__item-link > a');
+    return this.page.locator(' div:nth-child(20) a');
   }
 
   public async clickOnMakeAnAppointmentButton () {

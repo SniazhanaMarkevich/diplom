@@ -1,6 +1,6 @@
 import { type Page } from '@playwright/test';
 import { BasePage } from './basePage';
-import { baseLegalInformationUrl } from '../support/constants';
+import { baseLegalInformationUrl } from '../support/baseUrl';
 
 export class LegalInformationPage extends BasePage {
   constructor (page: Page) {
