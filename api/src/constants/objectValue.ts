@@ -1,24 +1,26 @@
+import { orderId, orderIdInvalid } from "./orderID";
+
 export const newValueForOrder = {
-  id: Math.floor(Math.random() * 10) + 1,
-  petId: Math.floor(Math.random() * 20) + 1,
-  quantity: Math.floor(Math.random() * 20) + 1,
+  id: orderId,
+  petId: orderIdInvalid,
+  quantity: orderIdInvalid,
   status: "placed",
   complete: true
 };
 
 export const updatedValueForPet = {
-  id: Math.floor(Math.random() * 10) + 1,
+  id: orderId,
   category: {
-    id: Math.floor(Math.random() * 10) + 1,
+    id: orderId,
     name: "NUK"
   },
   name: "doggie",
 };
 
 export const updatedValueForPetWrong = {
-  id: Math.floor(Math.random() * 10) + 1,
+  id: orderId,
   category: {
-    id: Math.floor(Math.random() * 10) + 1,
+    id: orderId,
     name: 123
   },
   name: 123,

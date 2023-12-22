@@ -2,6 +2,7 @@ import { type Page, expect, test } from '@playwright/test';
 import { HomePage } from '../src/pages/homePage';
 import { ListOfSpecialistPage } from '../src/pages/listOfSpecialistPage';
 import { baseDoctorInformationUrl, baseDoctorsUrl } from '../src/support/baseUrl';
+import { textDoctor } from '../src/support/textElement';
 
 test.describe.configure({ mode: 'serial' });
 
@@ -26,7 +27,7 @@ test.describe('5 element site tests', async () => {
   test('Should correctly display choice of specialization', async () => {
     await listOfSpecialistPage.clickOnSpecializationLocator();
     await listOfSpecialistPage.selectValueSection();
-    await expect(listOfSpecialistPage.getSpecializationContain()).toHaveText('Врач-кардиолог (взрослый прием). Стаж работы 29 лет, первая категория');
+    await expect(listOfSpecialistPage.getSpecializationContain()).toHaveText(textDoctor);
   });
 
   test('Should correctly open More details about the doctor after clicking on the link', async () => {
